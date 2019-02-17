@@ -11,7 +11,18 @@ public class UserServiceImpl implements UserService {
 
 	@Autowired
 	private UserDAO userDAO;
+	
+	@Override
+	public Iterable<User> findAll() {
+		return userDAO.findAll();
+	}
 
+	@Override
+	public User save(User user) {
+		return userDAO.save(user);
+	}
+
+	@Override
 	public User findByUserName(String userName) {
 		return userDAO.findByUserName(userName);
 	}

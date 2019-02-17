@@ -24,6 +24,9 @@
 					href="<c:url value="/adminRoot" />"><spring:message
 							code="layout.dashboard" /> </a></li>
 
+				<li class="list-group-item"><a href="<c:url value="/users" />"><spring:message
+							code="layout.salePoint" /> </a></li>
+
 				<!-- 
 				<li class="list-group-item"><a
 					href="<c:url value="/customerOrders/add"/>"> <spring:message
